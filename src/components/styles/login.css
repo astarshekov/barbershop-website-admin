@@ -1,0 +1,128 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 19s ease infinite;
+  height: 100vh;
+  margin-top: 3em;
+  color: black;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 60em;
+  height: 30em;
+  border-radius: 10px;
+}
+
+.login__header {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background: transparent;
+  padding: 2rem;
+  position: relative;
+}
+
+.input__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1em;
+}
+
+.input__wrapper {
+  position: relative;
+}
+
+.email {
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  right: 260px;
+  transform: translateY(-10%);
+}
+
+input[type="email"],
+input[type="password"] {
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+  border: none;
+  outline-width: 0;
+}
+
+input[type="email"]:focus {
+  border: 3px solid rgba(255, 153, 0, 1);
+}
+
+input[type="password"]:focus {
+  border: 3px solid rgba(255, 153, 0, 1);
+}
+
+button[type="submit"] {
+  color: #fff;
+  font-size: 1em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  max-width: 100%;
+  width: 350px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 153, 0, 1) 0%,
+    rgba(255, 153, 0, 1) 35%,
+    rgba(255, 239, 0, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  border: none;
+  outline-width: 0;
+  margin-top: 2em;
+}
+
+button[type="submit"]:hover {
+  filter: drop-shadow(0 0 0.75rem rgba(255, 153, 0, 1));
+}

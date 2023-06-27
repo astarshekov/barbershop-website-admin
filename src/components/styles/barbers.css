@@ -1,0 +1,23 @@
+.barbers__wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.barber {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5em;
+}
+
+.barber img {
+  width: 300px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+img:hover {
+  filter: none;
+}

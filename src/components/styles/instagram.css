@@ -1,0 +1,7 @@
+.instagram-icon__wrapper {
+  fill: white;
+}
+
+.instagram-icon__wrapper:hover {
+  cursor: pointer;
+}
